@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import option, Option2
+from task3.views import building_func, pipe_func, brick_func
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', option),
     path('option/', Option2.as_view()),
+    path('building/', building_func),
+    path('building/pipe/', pipe_func),
+    path('building/brick/', brick_func),
 ]
