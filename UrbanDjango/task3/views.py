@@ -6,6 +6,8 @@ def building_func(request):
     return render(request, 'third_task/building.html')
 
 
+# Для записи в тэгах заголовок и списки записал через словарь.
+# В соответствующих тэгах - имена переменных
 def pipe_func(request):
     title = "Трубы стальные"
     list_1 = 'Масса одного погонного метра'

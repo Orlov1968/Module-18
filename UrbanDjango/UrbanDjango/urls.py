@@ -19,6 +19,7 @@ from django.urls import path
 from task2.views import option, Option2
 from task3.views import building_func, pipe_func, brick_func
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', option),
