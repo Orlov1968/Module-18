@@ -1,10 +1,31 @@
 <!DOCTYPE html>
+{%load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+   <title>Main Page</title>
+   <link rel = "stylesheet" type="text/css" href="{%static 'style.css'%}">
 </head>
 <body>
+    <pagename>
+        {%block pagename%}
+            <h1>Заголовок Страницы</h1>
+        {%endblock%}
+    </pagename>
 
+    <menu>
+        {%block menu%}
+
+            <a href="/platform"><b>Главная</b></a>
+            <p></p>
+            <a href="/platform/store/"><b>Магазин</b></a>
+            <p></p>
+            <a href="/platform/cart"><b>Корзина</b></a>
+       {%endblock%}
+   </menu>
+    <content>
+        {%block content%}
+        {%endblock%}
+    </content>
 </body>
 </html>
