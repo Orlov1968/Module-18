@@ -18,11 +18,12 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.contrib import admin
 from django.urls import path
-from task4.views import main_page, store, korzina
+from task5.views import sign_up_by_html, sign_up_by_django
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('platform/', main_page),
-    path('platform/store/', store),
-    path('platform/cart/', korzina)
-]
+    path('sing_up_by_html/', sign_up_by_html),
+    path('', sign_up_by_django),
+    ]
+
